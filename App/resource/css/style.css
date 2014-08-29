@@ -33,6 +33,20 @@ div[ng-view] {
 .orange {
   color: #ff9933;
 }
+.titlebar.main .buttonHolder {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+}
+.titlebar.main .buttonHolder button {
+  display: inline;
+}
+.titlebar.main .buttonHolder a {
+  display: inline;
+}
+.titlebar.main .buttonHolder .hide {
+  display: none;
+}
 .tool-menu {
   width: 80px;
   height: 100%;

@@ -34,3 +34,65 @@
 	font-family: inherit;
 	width: 550px;
 }
+.wf-header
+{
+	height: 23px;
+	vertical-align: middle;
+	font-size: 13px;
+	margin: 0;
+	padding: 0 5px;
+	display: inline-block;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: #3a3a3e;
+	font-family: inherit;
+	width: 550px;
+}
+.wf-list
+{
+	border: 1px solid #3c3c42;
+	width:150px;
+	height:300px;
+	background: linear-gradient(
+		to bottom,
+		#fff,
+		#fff 97%,
+		#e4e4e4 3%,
+		#e4e4e4
+		);
+/* The rectangle in which to repeat.
+It can be fully wide in this case */
+background-size: 100% 30px;
+}
+.wf-table
+{
+	position: relative;
+	border: 1px solid #3c3c42;
+	width:150px;
+	height:300px;
+	background: linear-gradient(
+		to bottom,
+		#fff,
+		#fff 97%,
+		#e4e4e4 3%,
+		#e4e4e4
+		);
+	background-size: 100% 20px;
+}
+.wf-table:before
+{
+	position: absolute;
+	content: "";
+	background: repeating-linear-gradient( to right, #e4e4e4, #e4e4e4 2px, rgba(0, 0, 0, 0)0px, rgba(0, 0, 0, 0) 62px );
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-size: 100%;
+}
+.wf-table .wf-header
+{
+	width:100%;
+}

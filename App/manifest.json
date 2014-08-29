@@ -1,6 +1,6 @@
 {
-  "name": "App Core",
-  "description": "Example",
+  "name": "Wireframe App",
+  "description": "Wireframe App",
   "version": "0.1",
   "manifest_version": 2,
   "app": {
@@ -10,6 +10,8 @@
   },
   "permissions": [
     "storage"
+
   ],
+  "optional_permissions":["http://ajax.googleapis.com/*"],
   "icons": { "16": "resource/image/icon-16.png", "128": "resource/image/icon-128.png" }
 }

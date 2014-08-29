@@ -1,14 +1,29 @@
 {
 	"items":[
-	{
+		{
 		"name":"page",
 		"icon":"resource/image/icons/page.png",
 		"html":"<div type=\"text\" class=\"wf-page\"></div>"
 		},
 		{
+		"name":"header",
+		"icon":"resource/image/icons/header.png",
+		"html":"<div type=\"text\" class=\"wf-header\"><p contenteditable=\"true\"></p></div>"
+		},
+		{
 			"name":"input",
 			"icon":"resource/image/icons/input.png",
 			"html":"<div type=\"text\" class=\"wf-input\"><p contenteditable=\"true\"></p></div>"
+		},
+		{
+		"name":"list",
+		"icon":"resource/image/icons/list.png",
+		"html":"<div type=\"text\" class=\"wf-list\"><p contenteditable=\"true\"></p></div>"
+		},
+		{
+		"name":"table",
+		"icon":"resource/image/icons/table.png",
+		"html":"<div type=\"text\" class=\"wf-table\"><div type=\"text\" class=\"wf-header\"><p contenteditable=\"true\"></p></div></div>"
 		}
 		]
 	}
