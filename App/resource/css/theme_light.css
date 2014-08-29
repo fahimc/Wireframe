@@ -1,0 +1,36 @@
+.wf-input
+{
+	height: 23px;
+	vertical-align: middle;
+	font-size: 13px;
+	margin: 0;
+	padding: 0 5px;
+	display: inline-block;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: #c2c2c2;
+	background: #ffffff;
+	border: 1px solid #3c3c42;
+	font-family: inherit;
+	width: 150px;
+}
+.wf-page
+{
+	height: 350px;
+	vertical-align: middle;
+	font-size: 13px;
+	margin: 0;
+	padding: 0 5px;
+	display: inline-block;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: #c2c2c2;
+	background: #ffffff;
+	border: 1px solid #3c3c42;
+	font-family: inherit;
+	width: 550px;
+}

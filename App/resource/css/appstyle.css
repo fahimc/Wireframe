@@ -1,0 +1,1116 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,900);
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?17148511#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-home:before {
+  content: '\e800';
+}
+/* '' */
+.icon-cancel:before {
+  content: '\e801';
+}
+/* '' */
+.icon-attention-alt:before {
+  content: '\e802';
+}
+/* '' */
+.icon-down-open:before {
+  content: '\e803';
+}
+/* '' */
+.icon-left-open:before {
+  content: '\e804';
+}
+/* '' */
+.icon-right-open:before {
+  content: '\e805';
+}
+/* '' */
+.icon-up-open:before {
+  content: '\e806';
+}
+/* '' */
+.icon-circle-empty:before {
+  content: '\e807';
+}
+/* '' */
+.icon-dot-circled:before {
+  content: '\e808';
+}
+/* '' */
+.icon-sort-up:before {
+  content: '\e809';
+}
+/* '' */
+.icon-sort-down:before {
+  content: '\e80a';
+}
+/* '' */
+.icon-sort:before {
+  content: '\e80b';
+}
+/* '' */
+.icon-twitter:before {
+  content: '\e80c';
+}
+/* '' */
+.icon-tumblr:before {
+  content: '\e80d';
+}
+/* '' */
+.icon-ok:before {
+  content: '\e80e';
+}
+/* '' */
+.icon-plus:before {
+  content: '\e80f';
+}
+/* '' */
+.icon-play:before {
+  content: '\e810';
+}
+/* '' */
+.icon-stop:before {
+  content: '\e811';
+}
+/* '' */
+.icon-pause:before {
+  content: '\e812';
+}
+/* '' */
+.icon-to-start:before {
+  content: '\e813';
+}
+/* '' */
+.icon-to-end:before {
+  content: '\e814';
+}
+/* '' */
+.icon-chart-bar:before {
+  content: '\e815';
+}
+/* '' */
+.icon-mute:before {
+  content: '\e816';
+}
+/* '' */
+.icon-sliders:before {
+  content: '\e817';
+}
+/* '' */
+.icon-menu:before {
+  content: '\e818';
+}
+/* '' */
+.icon-cog:before {
+  content: '\e819';
+}
+/* '' */
+.icon-arrows-cw:before {
+  content: '\e81a';
+}
+/* '' */
+.icon-cw:before {
+  content: '\e81b';
+}
+/* '' */
+.icon-ccw:before {
+  content: '\e81c';
+}
+/* '' */
+.icon-facebook:before {
+  content: '\e81d';
+}
+/* '' */
+.icon-star-filled:before {
+  content: '\e81e';
+}
+/* '' */
+.icon-star:before {
+  content: '\e81f';
+}
+/* '' */
+.icon-check-empty:before {
+  content: '\e820';
+}
+/* '' */
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #121212;
+  font-family: 'Lato', sans-serif;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ecf0f1;
+}
+button {
+  border: 0;
+  background-color: #008287;
+  padding: 4px 12px;
+  color: #ecf0f1;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+  font-size: 13px;
+}
+button:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #008287;
+}
+button.disabled,
+button[disabled] {
+  background-color: #d3d3d3;
+  color: #666666;
+}
+button.mini {
+  padding: 0px 6px;
+  font-size: 10.5px;
+}
+button.success {
+  background-color: #60a917;
+}
+button.success:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #60a917;
+}
+button.warning {
+  background-color: #fa6800;
+}
+button.warning:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #fa6800;
+}
+button.alert {
+  background-color: #9a1616;
+}
+button.alert:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #9a1616;
+}
+button[class^="icon-"],
+button[class*=" icon-"] {
+  padding-left: 4px;
+}
+button[class^="icon-"]:not(.tile):empty,
+button[class*=" icon-"]:not(.tile):empty {
+  padding-right: 4px;
+}
+button .ticker {
+  display: inline;
+  float: right;
+  margin-top: -4px;
+  margin-right: -12px;
+  padding: 2px 4px;
+  background-color: #9a1616;
+  font-size: 10px;
+  margin-left: 4px;
+}
+button.tile {
+  padding: 20px;
+}
+button.tile[class^="icon-"],
+button.tile[class*=" icon-"] {
+  font-size: 44px;
+}
+.toggle-button {
+  overflow: hidden;
+  height: 24px;
+  position: relative;
+}
+.toggle-button INPUT[type='checkbox']:checked ~ label:nth-of-type(1) {
+  left: -100%;
+}
+.toggle-button INPUT[type='checkbox']:checked ~ label:nth-of-type(1):after {
+  display: none !important;
+}
+.toggle-button INPUT[type='checkbox']:checked ~ label:nth-of-type(2) {
+  left: 0;
+}
+.toggle-button label {
+  position: absolute;
+  height: 20px;
+  width: calc(55%);
+  display: block;
+  top: 0;
+  background-color: #60a917;
+  padding: 2px 7px 2px 7px;
+  -moz-transition: left 0.3s ease-in 0s;
+  -webkit-transition: left 0.3s ease-in 0s;
+  -o-transition: left 0.3s ease-in 0s;
+  transition: left 0.3s ease-in 0s;
+}
+.toggle-button label:nth-of-type(1) {
+  padding-right: 31px;
+  left: 0;
+}
+.toggle-button label:nth-of-type(1):before {
+  border: 1px solid #353a40;
+  height: calc(76%);
+  right: 2px;
+  top: 2px;
+  content: "";
+  width: 24px;
+  background-color: #ecf0f1;
+  position: absolute;
+}
+.toggle-button label:nth-of-type(1):after {
+  display: none;
+}
+.toggle-button label:nth-of-type(2) {
+  left: 100%;
+  background-color: #d3d3d3;
+  color: #333333;
+  text-align: right;
+  padding-left: 31px;
+}
+.toggle-button label:nth-of-type(2):before {
+  border: 1px solid #353a40;
+  height: calc(76%);
+  top: 2px;
+  left: 2px;
+  content: "";
+  width: 25px;
+  background-color: #ecf0f1;
+  position: absolute;
+}
+.toggle-button label:nth-of-type(2):after {
+  display: none;
+}
+.split-button {
+  display: inline;
+}
+.split-button input[type='radio'] + label {
+  border: 0;
+  background-color: #008287;
+  padding: 4px 12px;
+  color: #ecf0f1;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+  font-size: 13px;
+}
+.split-button input[type='radio'] + label:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #008287;
+}
+.split-button input[type='radio'] + label.disabled,
+.split-button input[type='radio'] + label[disabled] {
+  background-color: #d3d3d3;
+  color: #666666;
+}
+.split-button input[type='radio'] + label.mini {
+  padding: 0px 6px;
+  font-size: 10.5px;
+}
+.split-button input[type='radio'] + label.success {
+  background-color: #60a917;
+}
+.split-button input[type='radio'] + label.success:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #60a917;
+}
+.split-button input[type='radio'] + label.warning {
+  background-color: #fa6800;
+}
+.split-button input[type='radio'] + label.warning:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #fa6800;
+}
+.split-button input[type='radio'] + label.alert {
+  background-color: #9a1616;
+}
+.split-button input[type='radio'] + label.alert:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #9a1616;
+}
+.split-button input[type='radio'] + label[class^="icon-"],
+.split-button input[type='radio'] + label[class*=" icon-"] {
+  padding-left: 4px;
+}
+.split-button input[type='radio'] + label[class^="icon-"]:not(.tile):empty,
+.split-button input[type='radio'] + label[class*=" icon-"]:not(.tile):empty {
+  padding-right: 4px;
+}
+.split-button input[type='radio'] + label .ticker {
+  display: inline;
+  float: right;
+  margin-top: -4px;
+  margin-right: -12px;
+  padding: 2px 4px;
+  background-color: #9a1616;
+  font-size: 10px;
+  margin-left: 4px;
+}
+.split-button input[type='radio'] + label.tile {
+  padding: 20px;
+}
+.split-button input[type='radio'] + label.tile[class^="icon-"],
+.split-button input[type='radio'] + label.tile[class*=" icon-"] {
+  font-size: 44px;
+}
+.split-button input[type='radio'] + label:before {
+  display: none !important;
+}
+.split-button input[type='radio'] + label:after {
+  display: none !important;
+}
+.split-button input[type='radio']:checked + label {
+  background-color: #60a917;
+}
+.split-button input[type='radio']:checked + label:hover {
+  background-color: #60a917 !important;
+}
+.split-button input[type='radio'][disabled] + label {
+  background-color: #d3d3d3;
+  color: #666666;
+  opacity: 1;
+}
+.split-button input[type='radio'][disabled] + label:hover {
+  background-color: #d3d3d3 !important;
+  color: #666666 !important;
+}
+.titlebar {
+  width: 100%;
+  background-color: #333333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ecf0f1;
+  font-size: 14px;
+  font-weight: 900;
+}
+.titlebar * {
+  display: inline;
+}
+.titlebar > *:first-child {
+  margin-left: 10px;
+}
+.titlebar > *:last-child {
+  margin-right: 10px;
+}
+.titlebar .sub-title {
+  font-weight: 300;
+}
+.titlebar .right {
+  float: right;
+}
+.titlebar.sub-header {
+  background-color: #5a5a5a;
+}
+.titlebar [class^="icon-"],
+.titlebar [class*=" icon-"] {
+  background-color: transparent;
+}
+.titlebar [class^="icon-"]:hover,
+.titlebar [class*=" icon-"]:hover {
+  background-color: transparent !important;
+  color: #ffffff;
+}
+.titlebar.main {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 1px solid #121212;
+}
+input[type='checkbox'] {
+  display: none;
+}
+input[type='checkbox'] + label {
+  position: relative;
+}
+input[type='checkbox'] + label:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  color: #373a41;
+  content: '\e820';
+  font-size: 13px;
+}
+input[type='checkbox']:checked + label::after {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  color: #008287;
+  content: '\e80e';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 13px;
+}
+input[type='checkbox'][disabled] {
+  opacity: 0.4;
+}
+input[type='checkbox'][disabled] + label {
+  opacity: 0.4;
+}
+*::-webkit-scrollbar-corner,
+*::-webkit-scrollbar {
+  background: #121212;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+  background: #121212;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #5a5a5a;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #6b6b75;
+}
+*::-webkit-scrollbar-track {
+  background-color: #151516;
+}
+input[type='radio'] {
+  display: none;
+}
+input[type='radio'] + label {
+  position: relative;
+}
+input[type='radio'] + label:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  color: #373a41;
+  content: '\e807';
+  font-size: 13px;
+}
+input[type='radio']:checked + label::after {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  color: #008287;
+  content: '\e808';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 13px;
+}
+input[type='radio'][disabled] {
+  opacity: 0.4;
+}
+input[type='radio'][disabled] + label {
+  opacity: 0.4;
+}
+select {
+  background-color: #008287;
+  padding: 4px 12px;
+  font-weight: 300;
+  position: relative;
+  font-size: 13px;
+  padding-right: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-color: #5a5a5a;
+  border: 0;
+  color: #ecf0f1;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,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);
+  background-position: calc(96%) 2px, 0 0;
+}
+select:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #008287;
+}
+select.disabled,
+select[disabled] {
+  background-color: #d3d3d3;
+  color: #666666;
+}
+select.mini {
+  padding: 0px 6px;
+  font-size: 10.5px;
+}
+select.success {
+  background-color: #60a917;
+}
+select.success:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #60a917;
+}
+select.warning {
+  background-color: #fa6800;
+}
+select.warning:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #fa6800;
+}
+select.alert {
+  background-color: #9a1616;
+}
+select.alert:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #9a1616;
+}
+select[class^="icon-"],
+select[class*=" icon-"] {
+  padding-left: 4px;
+}
+select[class^="icon-"]:not(.tile):empty,
+select[class*=" icon-"]:not(.tile):empty {
+  padding-right: 4px;
+}
+select .ticker {
+  display: inline;
+  float: right;
+  margin-top: -4px;
+  margin-right: -12px;
+  padding: 2px 4px;
+  background-color: #9a1616;
+  font-size: 10px;
+  margin-left: 4px;
+}
+select.tile {
+  padding: 20px;
+}
+select.tile[class^="icon-"],
+select.tile[class*=" icon-"] {
+  font-size: 44px;
+}
+select:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  content: '\e803';
+}
+INPUT[type="text"],
+INPUT[type="search"],
+INPUT[type="number"],
+INPUT:not([type]),
+TEXTAREA {
+  border: 0;
+  background-color: #008287;
+  padding: 4px 12px;
+  cursor: pointer;
+  position: relative;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #008287;
+  background-color: #333333;
+  cursor: auto;
+  color: #ecf0f1;
+  font-weight: 300;
+}
+INPUT[type="text"]:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT[type="search"]:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT[type="number"]:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT:not([type]):not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+TEXTAREA:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #008287;
+}
+INPUT[type="text"].disabled,
+INPUT[type="search"].disabled,
+INPUT[type="number"].disabled,
+INPUT:not([type]).disabled,
+TEXTAREA.disabled,
+INPUT[type="text"][disabled],
+INPUT[type="search"][disabled],
+INPUT[type="number"][disabled],
+INPUT:not([type])[disabled],
+TEXTAREA[disabled] {
+  background-color: #d3d3d3;
+  color: #666666;
+}
+INPUT[type="text"].mini,
+INPUT[type="search"].mini,
+INPUT[type="number"].mini,
+INPUT:not([type]).mini,
+TEXTAREA.mini {
+  padding: 0px 6px;
+  font-size: 10.5px;
+}
+INPUT[type="text"].success,
+INPUT[type="search"].success,
+INPUT[type="number"].success,
+INPUT:not([type]).success,
+TEXTAREA.success {
+  background-color: #60a917;
+}
+INPUT[type="text"].success:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT[type="search"].success:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT[type="number"].success:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT:not([type]).success:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+TEXTAREA.success:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #60a917;
+}
+INPUT[type="text"].warning,
+INPUT[type="search"].warning,
+INPUT[type="number"].warning,
+INPUT:not([type]).warning,
+TEXTAREA.warning {
+  background-color: #fa6800;
+}
+INPUT[type="text"].warning:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT[type="search"].warning:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT[type="number"].warning:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT:not([type]).warning:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+TEXTAREA.warning:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #fa6800;
+}
+INPUT[type="text"].alert,
+INPUT[type="search"].alert,
+INPUT[type="number"].alert,
+INPUT:not([type]).alert,
+TEXTAREA.alert {
+  background-color: #9a1616;
+}
+INPUT[type="text"].alert:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT[type="search"].alert:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT[type="number"].alert:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+INPUT:not([type]).alert:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover,
+TEXTAREA.alert:not(.disabled):not([disabled]):not([size]):not(.disabled-item):hover {
+  background-color: #9a1616;
+}
+INPUT[type="text"][class^="icon-"],
+INPUT[type="search"][class^="icon-"],
+INPUT[type="number"][class^="icon-"],
+INPUT:not([type])[class^="icon-"],
+TEXTAREA[class^="icon-"],
+INPUT[type="text"][class*=" icon-"],
+INPUT[type="search"][class*=" icon-"],
+INPUT[type="number"][class*=" icon-"],
+INPUT:not([type])[class*=" icon-"],
+TEXTAREA[class*=" icon-"] {
+  padding-left: 4px;
+}
+INPUT[type="text"][class^="icon-"]:not(.tile):empty,
+INPUT[type="search"][class^="icon-"]:not(.tile):empty,
+INPUT[type="number"][class^="icon-"]:not(.tile):empty,
+INPUT:not([type])[class^="icon-"]:not(.tile):empty,
+TEXTAREA[class^="icon-"]:not(.tile):empty,
+INPUT[type="text"][class*=" icon-"]:not(.tile):empty,
+INPUT[type="search"][class*=" icon-"]:not(.tile):empty,
+INPUT[type="number"][class*=" icon-"]:not(.tile):empty,
+INPUT:not([type])[class*=" icon-"]:not(.tile):empty,
+TEXTAREA[class*=" icon-"]:not(.tile):empty {
+  padding-right: 4px;
+}
+INPUT[type="text"] .ticker,
+INPUT[type="search"] .ticker,
+INPUT[type="number"] .ticker,
+INPUT:not([type]) .ticker,
+TEXTAREA .ticker {
+  display: inline;
+  float: right;
+  margin-top: -4px;
+  margin-right: -12px;
+  padding: 2px 4px;
+  background-color: #9a1616;
+  font-size: 10px;
+  margin-left: 4px;
+}
+INPUT[type="text"].tile,
+INPUT[type="search"].tile,
+INPUT[type="number"].tile,
+INPUT:not([type]).tile,
+TEXTAREA.tile {
+  padding: 20px;
+}
+INPUT[type="text"].tile[class^="icon-"],
+INPUT[type="search"].tile[class^="icon-"],
+INPUT[type="number"].tile[class^="icon-"],
+INPUT:not([type]).tile[class^="icon-"],
+TEXTAREA.tile[class^="icon-"],
+INPUT[type="text"].tile[class*=" icon-"],
+INPUT[type="search"].tile[class*=" icon-"],
+INPUT[type="number"].tile[class*=" icon-"],
+INPUT:not([type]).tile[class*=" icon-"],
+TEXTAREA.tile[class*=" icon-"] {
+  font-size: 44px;
+}
+INPUT[type="text"]:hover,
+INPUT[type="search"]:hover,
+INPUT[type="number"]:hover,
+INPUT:not([type]):hover,
+TEXTAREA:hover {
+  background-color: #333333 !important;
+}
+INPUT[type="text"]::-webkit-autofill,
+INPUT[type="search"]::-webkit-autofill,
+INPUT[type="number"]::-webkit-autofill,
+INPUT:not([type])::-webkit-autofill,
+TEXTAREA::-webkit-autofill {
+  background-color: #333333 !important;
+}
+INPUT[type="text"]::-webkit-calendar-picker-indicator,
+INPUT[type="search"]::-webkit-calendar-picker-indicator,
+INPUT[type="number"]::-webkit-calendar-picker-indicator,
+INPUT:not([type])::-webkit-calendar-picker-indicator,
+TEXTAREA::-webkit-calendar-picker-indicator {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  width: 0px;
+  height: 0px;
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  position: relative;
+}
+INPUT[type="text"]::-webkit-calendar-picker-indicator::before,
+INPUT[type="search"]::-webkit-calendar-picker-indicator::before,
+INPUT[type="number"]::-webkit-calendar-picker-indicator::before,
+INPUT:not([type])::-webkit-calendar-picker-indicator::before,
+TEXTAREA::-webkit-calendar-picker-indicator::before {
+  content: '\e803';
+  position: absolute;
+  left: 5px;
+  top: -2px;
+  color: #008287;
+}
+INPUT[type="text"]::-webkit-calendar-picker-indicator::before:hover,
+INPUT[type="search"]::-webkit-calendar-picker-indicator::before:hover,
+INPUT[type="number"]::-webkit-calendar-picker-indicator::before:hover,
+INPUT:not([type])::-webkit-calendar-picker-indicator::before:hover,
+TEXTAREA::-webkit-calendar-picker-indicator::before:hover {
+  display: none;
+}
+INPUT[type="text"]::-webkit-calendar-picker-indicator:hover,
+INPUT[type="search"]::-webkit-calendar-picker-indicator:hover,
+INPUT[type="number"]::-webkit-calendar-picker-indicator:hover,
+INPUT:not([type])::-webkit-calendar-picker-indicator:hover,
+TEXTAREA::-webkit-calendar-picker-indicator:hover {
+  width: 0px;
+  height: 0px;
+}
+input:-webkit-autofill {
+  color: #ecf0f1;
+  background-color: #333333 !important;
+}
+datalist option {
+  background-color: #121212;
+}
+TABLE {
+  border: #008287 1px solid;
+  border-collapse: collapse;
+}
+TABLE TD,
+TABLE TH {
+  border: #008287 1px solid;
+  padding: 5px 10px 5px 10px;
+}
+TABLE TH {
+  background-color: #121212;
+}
+TABLE TR:nth-child(odd) {
+  background: #333333;
+}
+TABLE TR:nth-child(even) {
+  background: #5a5a5a;
+}
+DETAILS {
+  width: 100%;
+  background-color: #333333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ecf0f1;
+  font-size: 14px;
+  font-weight: 900;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #121212;
+}
+DETAILS * {
+  display: inline;
+}
+DETAILS > *:first-child {
+  margin-left: 10px;
+}
+DETAILS > *:last-child {
+  margin-right: 10px;
+}
+DETAILS .sub-title {
+  font-weight: 300;
+}
+DETAILS .right {
+  float: right;
+}
+DETAILS.sub-header {
+  background-color: #5a5a5a;
+}
+DETAILS [class^="icon-"],
+DETAILS [class*=" icon-"] {
+  background-color: transparent;
+}
+DETAILS [class^="icon-"]:hover,
+DETAILS [class*=" icon-"]:hover {
+  background-color: transparent !important;
+  color: #ffffff;
+}
+DETAILS.main {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 1px solid #121212;
+}
+DETAILS > *:last-child {
+  margin: 0;
+}
+DETAILS SUMMARY {
+  display: block;
+  outline: 0;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+DETAILS > DIV {
+  border-top: 1px solid #121212;
+  display: block;
+  background-color: #5a5a5a;
+  padding: 10px;
+  font-weight: 300;
+}
+input[type='radio'].ratings + label {
+  cursor: pointer;
+}
+input[type='radio'].ratings + label:before {
+  content: '\e81f';
+}
+input[type='radio'].ratings + label:after {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  color: #008287;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 13px;
+  content: '\e81e';
+}
+input[type='radio'].ratings + label:hover:after {
+  content: '\e81e' !important;
+}
+input[type='radio'].ratings + label:hover ~ label:after {
+  content: '' !important;
+}
+input[type='radio'].ratings:checked + label::after {
+  content: '\e81e';
+}
+input[type='radio'].ratings:checked + label ~ label::before {
+  content: '\e81f';
+}
+input[type='radio'].ratings:checked + label:not(hover) ~ label:not(hover)::after {
+  content: '';
+}
+.progress {
+  height: 25px;
+  display: block;
+  background-color: #333333;
+}
+.progress > SPAN {
+  background-color: #60a917;
+  height: 100%;
+  display: block;
+}
+.list {
+  list-style: none;
+}
+.list li {
+  padding: 4px 7px 4px 7px;
+}
+.list li:nth-of-type(even) {
+  background-color: #333333;
+}
+.list li:nth-of-type(odd) {
+  background-color: #5a5a5a;
+}
+*[tooltip] {
+  position: relative;
+}
+*[tooltip]:hover:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #333333 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: -7px;
+}
+*[tooltip]:hover:after {
+  height: 15px;
+  white-space: nowrap;
+  font-size: 11px;
+  position: absolute;
+  content: attr(tooltip);
+  bottom: calc(124%);
+  left: 0%;
+  background-color: #333333;
+  padding: 5px 7px;
+  display: block;
+}
+a {
+  color: #008287;
+}
+a:hover {
+  color: #1e9295;
+}

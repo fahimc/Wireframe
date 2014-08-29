@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello/fontello.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  min-width: 900px;
+  min-height: 600px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  margin: 0;
+  color: #e4e4e4;
+}
+div[ng-view] {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.view-holder {
+  height: calc(71%);
+}
+.orange {
+  color: #ff9933;
+}
+.tool-menu {
+  width: 80px;
+  height: 100%;
+  background-color: #5a5a5a;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+.tool-menu .menu-item {
+  border: 1px solid #e4e4e4;
+}
+.wire-canvas {
+  display: inline-block;
+  position: absolute;
+  vertical-align: top;
+  background-color: #e4e4e4;
+  left: 80px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}

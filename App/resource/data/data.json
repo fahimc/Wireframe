@@ -1,0 +1,14 @@
+{
+	"items":[
+	{
+		"name":"page",
+		"icon":"resource/image/icons/page.png",
+		"html":"<div type=\"text\" class=\"wf-page\"></div>"
+		},
+		{
+			"name":"input",
+			"icon":"resource/image/icons/input.png",
+			"html":"<div type=\"text\" class=\"wf-input\"><p contenteditable=\"true\"></p></div>"
+		}
+		]
+	}
