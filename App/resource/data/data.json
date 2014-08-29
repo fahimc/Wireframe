@@ -24,6 +24,11 @@
 		"name":"table",
 		"icon":"resource/image/icons/table.png",
 		"html":"<div type=\"text\" class=\"wf-table\"><div type=\"text\" class=\"wf-header\"><p contenteditable=\"true\"></p></div></div>"
+		},
+		{
+		"name":"accordion",
+		"icon":"resource/image/icons/accordion.png",
+		"html":"<div type=\"text\" class=\"wf-accordion\"><div class=\"wf-accordion-top\"></div></div>"
 		}
 		]
 	}
