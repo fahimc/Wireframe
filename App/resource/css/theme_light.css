@@ -18,7 +18,7 @@
 }
 .wf-page
 {
-	height: 350px;
+	height: 550px;
 	vertical-align: middle;
 	font-size: 13px;
 	margin: 0;
@@ -32,11 +32,11 @@
 	background: #ffffff;
 	border: 1px solid #3c3c42;
 	font-family: inherit;
-	width: 550px;
+	width: 750px;
 }
 .wf-header
 {
-	height: 23px;
+	height: 30px;
 	vertical-align: middle;
 	font-size: 13px;
 	margin: 0;
@@ -48,7 +48,7 @@
 	appearance: none;
 	background: #3a3a3e;
 	font-family: inherit;
-	width: 550px;
+	width: 750px;
 	color: #e4e4e4;
 }
 .wf-list
