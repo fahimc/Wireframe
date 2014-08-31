@@ -13,7 +13,12 @@
 		{
 			"name":"input",
 			"icon":"resource/image/icons/input.png",
-			"html":"<div type=\"text\" class=\"wf-input\"><p contenteditable=\"true\"></p></div>"
+			"html":"<div type=\"text\" class=\"wf-input\"><p contenteditable=\"true\">Input</p></div>"
+		},
+		{
+			"name":"button",
+			"icon":"resource/image/icons/button.png",
+			"html":"<div type=\"text\" class=\"wf-button\"><p contenteditable=\"true\">Button</p></div>"
 		},
 		{
 		"name":"list",
@@ -29,6 +34,24 @@
 		"name":"accordion",
 		"icon":"resource/image/icons/accordion.png",
 		"html":"<div type=\"text\" class=\"wf-accordion\"><div class=\"wf-accordion-top\"></div></div>"
+		},
+		{
+		"name":"checkbox",
+		"icon":"resource/image/icons/checkbox.png",
+		"html":"<div class=\"wf-checkbox\"></div>",
+		"scale":"false"
+		},
+		{
+		"name":"radio",
+		"icon":"resource/image/icons/radio.png",
+		"html":"<div class=\"wf-radio\"></div>",
+		"scale":"false"
+		},
+		{
+		"name":"label",
+		"icon":"resource/image/icons/label.png",
+		"html":"<div class=\"wf-label\"><p contenteditable=\"true\"></p></div>",
+		"scale":"false"
 		}
 		]
 	}

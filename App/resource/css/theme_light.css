@@ -1,3 +1,10 @@
+
+.ui-draggable
+{
+	top:50px;
+	left:50px;
+	position: absolute !important;
+}
 .wf-input
 {
 	height: 23px;
@@ -12,7 +19,7 @@
 	appearance: none;
 	color: #c2c2c2;
 	background: #ffffff;
-	border: 1px solid #3c3c42;
+	border: 1px solid #cccccc;
 	font-family: inherit;
 	width: 150px;
 }
@@ -30,7 +37,7 @@
 	appearance: none;
 	color: #c2c2c2;
 	background: #ffffff;
-	border: 1px solid #3c3c42;
+	border: 1px solid #cccccc;
 	font-family: inherit;
 	width: 750px;
 }
@@ -46,14 +53,14 @@
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	background: #3a3a3e;
+	background: #ccc;
 	font-family: inherit;
 	width: 750px;
 	color: #e4e4e4;
 }
 .wf-list
 {
-	border: 1px solid #3c3c42;
+	border: 1px solid #cccccc;
 	width:150px;
 	height:300px;
 	/*background: linear-gradient(
@@ -69,7 +76,7 @@ background: url('../image/component/list.gif');
 .wf-table
 {
 	position: relative;
-	border: 1px solid #3c3c42;
+	border: 1px solid #cccccc;
 	width:150px;
 	height:300px;
 	/*background: linear-gradient(
@@ -99,14 +106,77 @@ background: url('../image/component/list.gif');
 }
 .wf-accordion
 {
-	border: 1px solid #3c3c42;
+
+	border: 1px solid #cccccc;
 	width:150px;
 	height:300px;
-background: url('../image/component/accordion.gif');
+background: url('../image/component/accordion.jpg?ewe=3434');
 }
 .wf-accordion-top
 {
 	width:100%;
 	height:80px;
-background: url('../image/component/accordion-top.gif?sds=3343');
+background: url('../image/component/accordion-top.jpg');
+}
+.wf-button
+{
+	text-align: center;
+	height: 23px;
+	vertical-align: middle;
+	font-size: 13px;
+	margin: 0;
+	padding: 0 5px;
+	display: inline-block;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: #c2c2c2;
+	background: #e4e4e4;
+	border: 1px solid #cccccc;
+	font-family: inherit;
+	width: 100px;
+}
+.wf-button p,.wf-input p
+{
+	padding-top: 2px;
+	height: 100%;
+}
+.wf-checkbox
+{
+	display: block ;
+	width:15px;
+	height:15px;
+	border: 1px solid #cccccc;
+	background-color: #fff;
+}
+.wf-radio
+{
+	position: relative;
+	display: block ;
+	width:15px;
+	height:15px;
+	border: 1px solid #cccccc;
+	border-radius: 15px;
+	background-color: #fff;
+}
+.wf-radio:before
+{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: #e4e4e4;
+	left:50%;
+	top:50%;
+	margin-left: -5px;
+	margin-top: -5px;
+}
+.wf-label
+{
+	width:150px;
+	height:23px;
+	border: 1px dashed #cccccc;
+
 }

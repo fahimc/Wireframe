@@ -42,7 +42,7 @@ less: {
 },
 watch: {
   scripts: {
-    files: ['App/index.html','!App/js/app.js','!App/js/lib/**/*','App/js/src/**/*','App/resource/views/*','Less/**/*'],
+    files: ['App/index.html','!App/js/app.js','!App/js/lib/**/*','App/js/src/**/*','App/resource/views/*','Less/**/*','App/resource/css/theme_light.css','App/resource/data/data.json'],
     tasks: ['concat','less'],
     options: {
       interrupt: false,

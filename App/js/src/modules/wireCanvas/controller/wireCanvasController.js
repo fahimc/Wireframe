@@ -16,7 +16,9 @@ angular.module('wireCanvas').controller('wireCanvasController',function($scope,$
 				console.log(item);
 				var div = document.createElement('div');
 				div.innerHTML = item.html;
-				$(div.firstChild).draggable().resizable();
+				var $child =$(div.firstChild);
+				$child.draggable();
+				if(item.scale!="false")$child.resizable();
 				elem.appendChild(div.firstChild);
 		}
 
